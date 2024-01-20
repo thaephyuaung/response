@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<body>
+<input type="button" value="Mouse Event" id="myBtn">
+<script>
+var btn=document.getElementById("myBtn");
+var handler=function(event){
+   switch(event.type){
+   case "click": alert(event.type);break;
+   case "mouseover": event.target.style.backgroundColor="yellow";
+    event.target.style.fontSize="400px";
+   break;
+   case "mouseout": 
+   event.target.style.backgroundColor="";
+   event.target.style.fontSize="";
+   break;
+   }
+};
+btn.onclick=handler;
+btn.onmouseover=handler;
+btn.onmouseout=handler;
+</script></body>
+
+
+</html>

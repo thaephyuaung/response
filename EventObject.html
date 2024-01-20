@@ -1,0 +1,16 @@
+<html><head>
+<script src="EventListner.js"></script><body>
+<!-- <div id="myBtn">Cross Event Object</div> -->
+<input type="button" id="myBtn" value="Coss Event Object">
+<script>
+var btn=document.getElementById("myBtn");
+btn.onclick=function(event){
+event=EventUtil.getEvent(event);
+var target=EventUtil.getTarget(event);
+alert(target.tagName);};
+EventUtil.addHandler(btn,"mouseover",function(event){
+event=EventUtil.getEvent(event);
+var target=EventUtil.getTarget(event);
+alert(target.tagName);});
+</script>
+</html>

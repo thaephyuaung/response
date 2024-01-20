@@ -1,0 +1,12 @@
+<html><body>
+<input type="button" id="b" value="Flow Event">
+<script> 
+var btn=document.getElementById("b");
+b.onclick=function(event){
+     alert(event.eventPhase);};
+document.body.addEventListener("click",function(event){
+     alert(event.eventPhase);},false);
+document.body.onclick=function(event){
+     alert(event.eventPhase);};
+</script>
+</html>

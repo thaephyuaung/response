@@ -1,0 +1,10 @@
+<html><body>
+<input type="button" id="b" value="Flow Event">
+<script> 
+var btn=document.getElementById("b");
+b.onclick=function(event){
+alert(event.type);
+event.stopPropagation();};
+document.body.onclick=function(event){
+alert("Body Clicked");};
+</script>

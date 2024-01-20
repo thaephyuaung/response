@@ -1,0 +1,17 @@
+<html><head>
+<script src="EventListner.js"></script></head>
+<body>
+<input type="button" id="myBtn" value="Add Event">
+<input type="button" id="myBtn1" value="Remove Event">
+<script type="text/javascript">
+var btn=document.getElementById("myBtn");
+
+var handler=function(){alert(this.id);};
+EventUtil.addHandler(btn,"click",handler);
+var remove=document.getElementById("myBtn1");
+EventUtil.addHandler(remove, "click",function(){
+EventUtil.removeHandler(btn,"click",handler);});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<head>
+</head>
+<body>
+<ul>
+<li>Coffee (first il)</li>
+<li id="item">Tea(second li)</li>
+<li>juice (third li)</li></ul>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+function myFunction(){
+var x=document.getElementById("item").innerHTML;
+document.getElementById("demo").innerHTML=x;
+}
+
+var p=document.createElelment("p");
+p.align="center";
+var txt=document.createTextNode("This method can be used to escape HTML character.");
+p.appendChild(txt);
+document.body.appendChild(p);
+var outer=document.getElementById("item").outerHTML;
+document.getElementById("demo").innerHTML="<br>"+outerHTMl;
+</script>
+
+</body>
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
